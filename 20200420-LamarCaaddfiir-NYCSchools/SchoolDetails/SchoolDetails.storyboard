@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4rl-2M-D89">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail-->
+        <scene sceneID="Lyf-KW-kOh">
+            <objects>
+                <viewController storyboardIdentifier="SchoolDetailsVC" title="Detail" id="4rl-2M-D89" customClass="SchoolDetailsVC" customModule="_0200420_LamarCaaddfiir_NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X8m-gu-1Ty">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mg5-Ax-qpc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SchoolDetailsCell" rowHeight="84" id="Kep-7V-mOV" customClass="SchoolDetailsCell" customModule="_0200420_LamarCaaddfiir_NYCSchools" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="84"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kep-7V-mOV" id="vZV-Nx-f97">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHb-AD-l0o">
+                                                    <rect key="frame" x="20" y="11" width="374" height="62"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wHb-AD-l0o" firstAttribute="leading" secondItem="vZV-Nx-f97" secondAttribute="leadingMargin" id="H7b-gj-ecR"/>
+                                                <constraint firstItem="wHb-AD-l0o" firstAttribute="top" secondItem="vZV-Nx-f97" secondAttribute="topMargin" id="KcG-zE-RD8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wHb-AD-l0o" secondAttribute="bottom" id="V7c-tZ-iKu"/>
+                                                <constraint firstItem="wHb-AD-l0o" firstAttribute="trailing" secondItem="vZV-Nx-f97" secondAttribute="trailingMargin" id="k1E-xV-qks"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="rowLabel" destination="wHb-AD-l0o" id="3YY-ua-ogY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4rl-2M-D89" id="rAH-DU-6WV"/>
+                                    <outlet property="delegate" destination="4rl-2M-D89" id="trB-lf-IBE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rrj-R9-jM6" firstAttribute="trailing" secondItem="mg5-Ax-qpc" secondAttribute="trailing" id="OmN-Pi-Sra"/>
+                            <constraint firstAttribute="bottom" secondItem="mg5-Ax-qpc" secondAttribute="bottom" id="oWF-5u-y4N"/>
+                            <constraint firstItem="mg5-Ax-qpc" firstAttribute="top" secondItem="rrj-R9-jM6" secondAttribute="top" id="q9p-ph-3iX"/>
+                            <constraint firstItem="mg5-Ax-qpc" firstAttribute="leading" secondItem="rrj-R9-jM6" secondAttribute="leading" id="t9J-9j-iRn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rrj-R9-jM6"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mg5-Ax-qpc" id="pL5-UA-8Zh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EE6-wX-PeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+</document>
